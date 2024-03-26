@@ -11,6 +11,8 @@ import Books from './components/Books/Books';
 import Pages from './components/Pages/Pages';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import CardDetails from './components/CardDetails/CardDetails';
+import ClassicBooks from './components/ClassicBooks/ClassicBooks';
+import RomanceBooks from './components/RomanceBooks/RomanceBooks';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +39,12 @@ const router = createBrowserRouter([
 
       },
       {
-        path: '/'
+        path: '/classic',
+        element: <ClassicBooks></ClassicBooks>
+      },
+      {
+        path: '/romance',
+        element: <RomanceBooks></RomanceBooks>
       }
     ]
   },
