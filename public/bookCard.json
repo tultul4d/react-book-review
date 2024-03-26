@@ -1,0 +1,69 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://example.com/great_gatsby.jpg",
+      "review": "A timeless classic depicting the decadence and moral emptiness of the Jazz Age.",
+      "totalPages": 180,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Classics", "Romance"]
+    },
+    {
+      "bookId": 2,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://example.com/to_kill_a_mockingbird.jpg",
+      "review": "A powerful story of racial injustice and moral growth set in the American South.",
+      "totalPages": 281,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Classics", "Social Issues"]
+    },
+    {
+      "bookId": 3,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://example.com/1984.jpg",
+      "review": "A chilling dystopian novel depicting a totalitarian regime and the erosion of individual freedom.",
+      "totalPages": 328,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political"]
+    },
+    {
+      "bookId": 4,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://example.com/catcher_in_the_rye.jpg",
+      "review": "A coming-of-age novel exploring teenage angst, alienation, and the search for identity.",
+      "totalPages": 224,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Coming-of-age", "Literary"]
+    },
+    {
+      "bookId": 5,
+      "bookName": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "image": "https://example.com/harry_potter.jpg",
+      "review": "An enchanting tale of magic, friendship, and the battle between good and evil.",
+      "totalPages": 332,
+      "rating": 4.7,
+      "category": "Fantasy",
+      "tags": ["Magic", "Adventure"]
+    },
+    {
+      "bookId": 6,
+      "bookName": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "image": "https://example.com/da_vinci_code.jpg",
+      "review": "A gripping mystery thriller that combines art history with conspiracy theories.",
+      "totalPages": 454,
+      "rating": 4.2,
+      "category": "Mystery",
+      "tags": ["Suspense", "Conspiracy"]
+    }
+  ]
+  
