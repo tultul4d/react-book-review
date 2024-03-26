@@ -1,9 +1,10 @@
-
+import { IoMdStarOutline } from "react-icons/io";
+import { Link } from "react-router-dom";
 const Card = ({card}) => {
-    const {image, tags, tags2, bookName, author, category, rating} = card;
+    const {bookId, image, tags, tags2, bookName, author, category, rating} = card;
     return (
-        <div className="  ">
-            <div className=" card w-[350px] mt-5 gap-5 bg-base-100 shadow-xl ">
+      
+            <Link to={`/card/${bookId}`} className=" card w-[350px] mt-5 gap-5 bg-base-100 shadow-xl ">
   <figure className="px-10 pt-10 bg-[#F3F3F3]">
     <img src={image} alt="Shoes" className="rounded-xl" />
   </figure>
@@ -17,14 +18,14 @@ const Card = ({card}) => {
     <hr />
     <div className="flex justify-between gap-40">
      <div><h1>{category}</h1></div>
-     <div>
-        <div></div>
+     <div className="flex">
+        <div className="gap-2 mt-1 "><IoMdStarOutline></IoMdStarOutline></div>
         <div><h1>{rating}</h1></div>
      </div>
     </div>
   </div>
-</div>
-        </div>
+</Link>
+        
     );
 };
 
