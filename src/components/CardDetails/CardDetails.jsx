@@ -1,4 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -8,6 +10,14 @@ const CardDetails = () => {
     const idInt = parseInt(bookId);
     const card = cards.find(card => card.bookId === idInt)
     console.log(card);
+
+    const handleRead = () =>{
+        toast('You have read');
+    }
+
+    const handleWish = () =>{
+        toast('wish');
+    }
 
     return (
         <div className="hero bg-base-200">
@@ -32,11 +42,12 @@ const CardDetails = () => {
       <p className="mt-4 text-[#1E1E1E] font-semibold"><span className="text-[#131313] text-opacity-70 mr-10">Rating:</span>{card.rating}</p>
 
       <div className="flex gap-10 mt-4">
-      <button className="btn border ">Read</button>
-      <button className="btn bg-[#50B1C9] text-white">Wishlist</button>
+      <button onClick={handleRead} className="btn border ">Read</button>
+      <button onClick={handleWish} className="btn bg-[#50B1C9] text-white">Wishlist</button>
       </div>
     </div>
   </div>
+  <ToastContainer />
 </div>
     );
 };
