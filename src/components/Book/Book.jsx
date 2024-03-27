@@ -1,19 +1,14 @@
+
 import { FaLocationDot } from "react-icons/fa6";
 import { MdMan2 } from "react-icons/md";
 import { MdOutlineRestorePage } from "react-icons/md";
 
 const Book = ({read}) => {
-    const {bookId, image, tags, tags2, bookName, author, category, rating, publisher, totalPages} = read;
+    
+    const { image, tags, tags2, bookName, author, category, rating, publisher, totalPages} = read;
     return (
         
-
-
         <div>
-            <div role="tablist" className=" tabs-lifted mt-10 ">
-  <a role="tab" className="tab tab-active text-[#242222] text-opacity-50">Read Books</a>
-  <a role="tab" className="tab text-[#131313] text-opacity-50 ">Wishlist Books</a>
-  
-</div>
             <div className="hero w-[1000px] h-[277px] mt-10 bg-base-200 rounded-lg ">
         <div className="hero-content flex-col lg:flex-row">
           <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
@@ -46,7 +41,7 @@ const Book = ({read}) => {
         </div>
       </div>
 
-
+      
         </div>
     );
 };

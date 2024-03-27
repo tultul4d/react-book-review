@@ -13,6 +13,9 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import CardDetails from './components/CardDetails/CardDetails';
 import ClassicBooks from './components/ClassicBooks/ClassicBooks';
 import RomanceBooks from './components/RomanceBooks/RomanceBooks';
+import Book from './components/Book/Book';
+import Wishs from './components/Wishs/Wishs';
+
 
 const router = createBrowserRouter([
   {
@@ -27,11 +30,24 @@ const router = createBrowserRouter([
       {
         path: '/book',
         element: <Books></Books>,
-        loader: () => fetch('/bookCard.json')
+        loader: () => fetch('/bookCard.json'),
+        children:[
+          {
+            index: true,
+            element: <Book></Book>
+
+          },
+          {
+            path:'wish',
+            element: <Wishs></Wishs>,
+          }
+        ]
       },
+      
       {
         path: '/pages',
-        element: <Pages></Pages>
+        element: <Pages></Pages>,
+        loader: () => fetch('../bookCard.json')
       },
       {
         path: '/card/:bookId',

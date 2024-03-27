@@ -46,8 +46,8 @@ const CardDetails = () => {
       <p className="mt-4 text-[#1E1E1E] font-semibold"><span className="text-[#131313] text-opacity-70 mr-10">Rating:</span>{card.rating}</p>
 
       <div className="flex gap-10 mt-4">
-      <button onClick={handleRead} className="btn border ">Read</button>
-      <button onClick={handleWish} className="btn bg-[#50B1C9] text-white">Wishlist</button>
+      <button onClick={() =>handleRead(0)} className="btn border ">Read</button>
+      <button onClick={() =>handleWish(1)} className="btn bg-[#50B1C9] text-white">Wishlist</button>
       </div>
     </div>
   </div>
