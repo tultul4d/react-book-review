@@ -36,7 +36,7 @@ export default function App() {
   }, [])
   return (
     <BarChart
-      width={500}
+      width={1100}
       height={300}
       data={appliedReads}
       margin={{
