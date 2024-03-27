@@ -1,6 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveReadApplication } from "../../utility/readlocalstorage";
+import { saveWishApplication } from "../../utility/wishlocalstorage";
 
 
 
@@ -12,10 +14,12 @@ const CardDetails = () => {
     console.log(card);
 
     const handleRead = () =>{
+        saveReadApplication(idInt);
         toast('You have read');
     }
 
     const handleWish = () =>{
+        saveWishApplication(idInt);
         toast('wish');
     }
 
