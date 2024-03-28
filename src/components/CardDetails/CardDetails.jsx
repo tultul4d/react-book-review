@@ -55,7 +55,7 @@ const CardDetails = () => {
   <div className="hero-content flex-col lg:flex-row">
     <img src={card.image} className="rounded-lg lg:w-[390px] lg:h-[500px] shadow-2xl" />
     <div>
-      <h1 className="text-5xl font-bold">{card.bookName}</h1>
+      <h1 className="lg:text-5xl font-bold">{card.bookName}</h1>
       <p className="py-6 font-semibold"><span className="text-black font-semibold">By:</span>{card.category}</p>
       <hr />
       <p className="text-black font-semibold mt-4">{card.category}</p>
