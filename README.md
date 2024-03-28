@@ -1,9 +1,9 @@
 # Website Name: 
 Book Vibe
 
-# gitGubLink:
+# gitGubLink: https://github.com/programming-hero-web-course-4/b9a8-book-vibe-tultul4d
 
-# liveLink:
+# liveLink: https://660517bd39d4b652b1387c30--magenta-tartufo-381391.netlify.app/
 
 # bullet points features:
 1. Banner : : A banner section having: a title and a button Named “View The
