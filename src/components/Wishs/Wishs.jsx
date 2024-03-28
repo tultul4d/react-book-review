@@ -34,13 +34,13 @@ const Wishs = () => {
                                 <p className="text-[#23BE0A] bg-[#23BE0A] bg-opacity-5 border rounder-full">{read.tags2}</p> */}
                                 <p className=" flex text-xl gap-4 font-semibold " ><span>Tag:</span>{
                   read.tags.map(tag => (
-                    <p key={tag.id} className=" text-sm text-[#23BE0A] rounded-full bg-[#23BE0A] bg-opacity-5 py-2 px-2">#{tag}</p>
+                    <p key={tag.id} className=" text-sm text-[#23BE0A]  rounded-full bg-[#23BE0A] bg-opacity-5 py-2 px-2">#{tag}</p>
                   ))
                 }
                 </p>
                                 <div className="mt-2"> <FaLocationDot></FaLocationDot></div>
                                 <p>Year of Publishing: </p>
-                                <p>{read.publisher}</p>
+                                <p>{read.yearOfPublishing}</p>
                             </div>
                             <div className="lg:flex flex-row-2 gap-2 mt-5">
                                 <div className="mt-1">

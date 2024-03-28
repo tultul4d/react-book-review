@@ -41,7 +41,7 @@ const Book = () => {
                 {/* <p className="text-[#23BE0A] bg-[#23BE0A] bg-opacity-5 border rounder-full">#{read.tags2}</p> */}
                 <div className="mt-2"> <FaLocationDot></FaLocationDot></div>
                 <p>Year of Publishing: </p>
-                <p>{read.publisher}</p>
+                <p>{read.yearOfPublishing}</p>
               </div>
               <div className="lg:flex flex-row-2 gap-2 mt-5">
                 <div className="mt-1">
