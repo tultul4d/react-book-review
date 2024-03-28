@@ -39,16 +39,16 @@ const Book = () => {
                 </p>
                 {/* <p className="text-[#23BE0A] bg-[#23BE0A] bg-opacity-5 ">#{read.tags}</p> */}
                 {/* <p className="text-[#23BE0A] bg-[#23BE0A] bg-opacity-5 border rounder-full">#{read.tags2}</p> */}
-                <div> <FaLocationDot></FaLocationDot></div>
+                <div className="mt-2"> <FaLocationDot></FaLocationDot></div>
                 <p>Year of Publishing: </p>
                 <p>{read.publisher}</p>
               </div>
-              <div className="lg:flex flex-row-2 justify-between mt-5">
-                <div>
+              <div className="lg:flex flex-row-2 gap-2 mt-5">
+                <div className="mt-1">
                   <MdMan2></MdMan2>
                 </div>
                 <p><span>Publisher:</span>{read.category}</p>
-                <div><MdOutlineRestorePage></MdOutlineRestorePage></div>
+                <div className="mt-1"><MdOutlineRestorePage></MdOutlineRestorePage></div>
                 <p><span>Page</span>{read.totalPages}</p>
               </div>
               <hr />
