@@ -12,7 +12,7 @@ const Cards = () => {
     return (
        <div>
          <div>
-            <h2 className="text-3xl text-center mt-10 font-bold">Books: {cards.length} </h2>
+            <h2 className="text-3xl text-center mt-10 font-bold">Books  </h2>
         </div>
         <div className="grid lg:grid-cols-3 grid-cols-1">
             {

@@ -6,11 +6,12 @@
       "image": "https://i.ibb.co/t4dVmGW/pngwing-1-1.png",
       "review": "A timeless classic depicting the decadence and moral emptiness of the Jazz Age.",
       "totalPages": 180,
-      "publisher": 1924,
+      "publisher": "Hoque",
       "rating": 4.5,
       "category": "Fiction",
-      "tags": ["Classics" ],
-      "tags2": [ "Romance"]
+      "tags": ["Classics", "Romance" ],
+      "tags2": [ "Romance"],
+      "yearOfPublishing" : 1982
     },
     {
       "bookId": 2,
@@ -19,11 +20,12 @@
       "image": "https://i.ibb.co/yh1tdbd/kindpng-7318921.png",
       "review": "A powerful story of racial injustice and moral growth set in the American South.",
       "totalPages": 281,
-      "publisher": 1988,
+      "publisher": "rokomari",
       "rating": 4.8,
       "category": "Fiction",
-      "tags": ["Classics"],
-      "tags2": [ "Social Issues"]
+      "tags": ["Classics", "Social Issues"],
+      "tags2": [ "Social Issues"],
+      "yearOfPublishing" : 1988
     },
     {
       "bookId": 3,
@@ -32,10 +34,10 @@
       "image": "https://i.ibb.co/zxCTTZ2/kindpng-1064993.png",
       "review": "A chilling dystopian novel depicting a totalitarian regime and the erosion of individual freedom.",
       "totalPages": 328,
-      "publisher": 1994,
+      "publisher": "daricome",
       "rating": 4.6,
       "category": "Fiction",
-      "tags": ["Identity" ],
+      "tags": ["Identity", "Young Adult" ],
       "tags2": [ "Young Adult"]
     },
     {
@@ -45,11 +47,12 @@
       "image": "https://i.ibb.co/PZykMr9/kindpng-4022054-1.png",
       "review": "A coming-of-age novel exploring teenage angst, alienation, and the search for identity.",
       "totalPages": 224,
-      "publisher": 1964,
+      "publisher": "daricome",
       "rating": 4.3,
       "category": "Fiction",
-      "tags": ["Coming-of-age" ],
-      "tags2": [ "Literary"]
+      "tags": ["Coming-of-age", "Literary" ],
+      "tags2": [ "Literary"],
+      "yearOfPublishing" : 1782
     },
     {
       "bookId": 5,
@@ -58,11 +61,12 @@
       "image": "https://i.ibb.co/yBZBWKC/kindpng-81724-1.png",
       "review": "An enchanting tale of magic, friendship, and the battle between good and evil.",
       "totalPages": 332,
-      "publisher": 1824,
+      "publisher": "Hoque",
       "rating": 4.7,
       "category": "Fantasy",
-      "tags": ["Magic"],
-      "tags2": [  "Adventure"]
+      "tags": ["Magic", "Adventure"],
+      "tags2": [  "Adventure"],
+      "yearOfPublishing" : 1602
     },
     
     {
@@ -72,11 +76,12 @@
       "image": "https://i.ibb.co/ftCN59n/kindpng-2193744-1.png",
       "review": "A gripping mystery thriller that combines art history with conspiracy theories.",
       "totalPages": 454,
-      "publisher": 1724,
+      "publisher": "Scribner",
       "rating": 4.2,
       "category": "Mystery",
-      "tags": ["Suspense"],
-      "tags2": [  "Conspiracy"]
+      "tags": ["Suspense", "Conspiracy"],
+      "tags2": [  "Conspiracy"],
+      "yearOfPublishing" : 1982
     }
   ]
   
