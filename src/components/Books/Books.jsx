@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 import { getStoredReadApplication } from "../../utility/readlocalstorage";
 import Book from "../Book/Book";
 
@@ -22,9 +22,10 @@ const Books = () => {
   <Link to= '' onClick={() =>setTabIndex(0)} role="tab" className={` ${tabIndex === 0 ? 'tab  tab-active':'tab'} text-[#242222] text-opacity-50`}>Read Books</Link>
   <Link to= {`wish`} onClick={() =>setTabIndex(1)} role="tab" className={` ${tabIndex === 1 ? 'tab  tab-active':'tab'} text-[#242222] text-opacity-50`}>Wishlist Books</Link>
   </div>
-  {
+  {/* {
                 appliedReads.map(read => <Book key={read.id} read={read}></Book>)
-            }
+            } */}
+            <Outlet></Outlet>
         </div>
     );
 };

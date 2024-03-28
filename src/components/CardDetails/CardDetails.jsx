@@ -3,6 +3,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveReadApplication } from "../../utility/readlocalstorage";
 import { saveWishApplication } from "../../utility/wishlocalstorage";
+import { useState } from "react";
+import Wishs from "../Wishs/Wishs";
 
 
 
@@ -13,14 +15,39 @@ const CardDetails = () => {
     const card = cards.find(card => card.bookId === idInt)
     console.log(card);
 
+    const [readBooks, setReadBooks] = useState([]);
+    const [wishlistBooks, setWishlistBooks] = useState([]);
+
     const handleRead = () =>{
         saveReadApplication(idInt);
-        toast('You have read');
+        if (readBooks.includes(card)){
+          toast.error('You have read');
+        }
+        else if (wishlistBooks.includes(card)){
+          setReadBooks([...readBooks, card]);
+          toast.success('this book added to you read list')
+        }
+        else{
+          setReadBooks([...readBooks, card]);
+          toast.success('this book added to you read list')
+
+        }
+        
     }
 
     const handleWish = () =>{
         saveWishApplication(idInt);
-        toast('wish');
+        if (wishlistBooks.includes(card)){
+          toast.error('This book is already in your wishlist');
+        }
+        else if (readBooks.includes(card)){
+          setReadBooks([...readBooks, card]);
+          toast.error('this book is already added to you wish list')
+        }
+        else{
+          setWishlistBooks([...wishlistBooks, card])
+          toast.success('this book added to you read list')
+        }
     }
 
     return (
@@ -46,8 +73,8 @@ const CardDetails = () => {
       <p className="mt-4 text-[#1E1E1E] font-semibold"><span className="text-[#131313] text-opacity-70 mr-10">Rating:</span>{card.rating}</p>
 
       <div className="flex gap-10 mt-4">
-      <button onClick={() =>handleRead(0)} className="btn border ">Read</button>
-      <button onClick={() =>handleWish(1)} className="btn bg-[#50B1C9] text-white">Wishlist</button>
+      <button onClick={handleRead} className="btn border ">Read</button>
+      <button onClick={handleWish} className="btn bg-[#50B1C9] text-white">Wishlist</button>
       </div>
     </div>
   </div>
